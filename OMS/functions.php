@@ -14,6 +14,65 @@ function current_page_url() {
 	return $pageURL;
 }
 
+// function to find location within array
+function relative_value_array($array, $current_val = '', $offset = 1) 
+{
+	$values = array_values($array);
+	$current_val_index = array_search($current_val, $values);
+
+	if( isset($values[$current_val_index + $offset]) ) 
+	{
+		return $values[$current_val_index + $offset];
+	}
+
+    return false;
+};
+
+// previous page link function
+function ruab_prev_page_link() {
+    global $post;
+
+    $output = '';
+	
+	if ( isset($post->post_parent) && $post->post_parent > 0 ) {
+        $children = get_pages('&sort_column=post_date&sort_order=asc&child_of='.$post->post_parent.'&parent='.$post->post_parent);
+
+		// throw the children ids into an array
+		foreach( $children as $child ) { $child_id_array[] = $child->ID; }
+		
+		$prev_page_id = relative_value_array($child_id_array, $post->ID, -1);
+		$output = '';
+		
+		if( '' != $prev_page_id ) 
+		{
+			$output .= '<a href="' . get_page_link($prev_page_id) . '"><img src="'. get_template_directory_uri() .'/images/arrow-left.png" /></a>';
+		}
+	};
+	return $output;
+};
+
+//next page link function
+function ruab_next_page_link() {
+    global $post;
+
+	$output = '';	
+	
+    if ( isset($post->post_parent) && $post->post_parent > 0 ) {
+        $children = get_pages('&sort_column=post_date&sort_order=asc&child_of='.$post->post_parent.'&parent='.$post->post_parent);
+
+		// throw the children ids into an array
+		foreach( $children as $child ) { $child_id_array[] = $child->ID; }
+
+		$next_page_id = relative_value_array($child_id_array, $post->ID, 1);
+
+		if( '' != $next_page_id ) {
+			$output .= '<a href="' . get_page_link($next_page_id) . '"><img src="'. get_template_directory_uri() .'/images/arrow-right.png" /></a>';
+		}
+	};
+	return $output;
+};
+
+
 function register_my_menus() {
   register_nav_menus(
     array(

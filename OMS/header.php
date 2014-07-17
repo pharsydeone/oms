@@ -4,9 +4,17 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title><?php echo get_bloginfo('name'); ?> - <?php wp_title(); ?></title>
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
+<meta name="viewport" content="initial-scale=1.0,width=device-width" />
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/jquery.sidr.dark.css" />
 </head>
 
 <body>
+<div class="mobile" id="sidr">
+	<?php wp_nav_menu( array( 'theme_location' => 'mobilemain-menu' ) ); ?>
+	<hr/>
+	<?php wp_nav_menu( array( 'theme_location' => 'mobilesub-menu' ) ); ?>
+</div>
 <div id="page-wrapper">
     <div id="header-wrapper" class="cf">
         <header>
@@ -22,7 +30,11 @@
                 <a href="<?php echo home_url(); ?>"><?php echo get_bloginfo('name'); ?></a>
             </h1>
             <nav id="header-nav">
-				<?php wp_nav_menu( array( 'theme_location' => 'mainnav-menu' ) ); ?>
+            	<div class="menu-header-menu-container">
+					<?php wp_nav_menu( array( 'theme_location' => 'mainnav-menu' ) ); ?>
+                </div>
+                <div class="phone">888.867.5309</div>              
             </nav>
+            
         </header>
     </div>

@@ -1,3 +1,15 @@
+/*
+Theme Name: Orthopedic Medicine Specialist
+Theme URI: 
+Author: RUAB
+Author URI: 
+Description: Custom responsive template for OMS
+Version: 1.0 
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: 
+*/
+
 /* HTML5Doctor reset */
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
 body{line-height:1}
@@ -82,7 +94,7 @@ a {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d9d9d9',GradientType=0 ); /* IE6-8 */
 }
 
-
+img.bkg { max-width: 100%; }
 
 #header-wrapper {
 	width: 100%;
@@ -143,13 +155,27 @@ a {
 }
 
 #content h1 {
-	color: #0174cf;
+	color: #FFFFFF;
 }
 
 #content h2 {
 
 }
 
+@font-face {
+    font-family: gothamMedium;
+    src: url('fonts/gotham-medium.ttf');
+}
+
+@font-face {
+    font-family: gothamBold;
+    src: url('fonts/gotham-bold.ttf');
+}
+
+@font-face {
+    font-family: gothamBook;
+    src: url('fonts/gotham-book.ttf');
+}
 
 #page-title {
 
@@ -257,6 +283,22 @@ a.more:active {
 	text-decoration: none;
 }
 
+#header-wrapper2 #header-nav .menu-header-menu-container {
+    display: inline-block;
+}
+
+.background-wrapper {
+	background-image:url(images/heroHome.jpg);
+	background-size: cover;
+}
+
+#header-wrapper2 #header-nav .appointment {
+	position:absolute;
+	float:right;
+    width: 150px;
+    top: 30px;
+    background: #cccccc;
+}
 
 /* Smartphones (portrait) ----------- */
 @media only screen 
@@ -276,6 +318,7 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 	#header-wrapper2 {
 		background: #3ab2c3;
 		border-bottom: none;
+		vertical-align:middle;
 	}
 	
 	#header-wrapper header {
@@ -291,6 +334,18 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 		height: 68px;
 		display: block;
 	}
+	
+    #header-wrapper2 #header-nav .phone {
+        float: right;
+        margin: 10px 20px 0 0;
+    }
+	
+	#header-wrapper2 #header-nav .phone {
+		display: inline-block;
+		margin-left: 20px;
+		font-weight: bold;
+		color: #FFFFFF;
+	}
 
 	#page-nav-wrapper header {
 		width: 100%;
@@ -298,12 +353,41 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 		display: block;
 	}
 	
+	.home-title {
+	font-size: 200%;
+	color: #154baf;
+	font-family: gothamBold;
+	font-weight: bold;
+	
+}
+
+	.home-sub-title {
+		font-size: 100%;
+		color: #ffffff;
+		font-family: gothamBook;
+		font-weight: bold;
+		line-height: 1.25;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		
+	}
+	
+	.home-copy {
+		color: #363636;
+		font-family: gothamBook;
+		width: 100%;
+	}
+	
 	header a.mobile {
 		display: inline-block;
 		width: 22px;
 		height: 26px;
 		padding: 5px 0;
-		margin: 0 16px 0 5px;;
+		margin: 0 16px 0 5px;
+	}
+	
+	.home-spacer{
+		margin: 25px;
 	}
 	
 	#logo {
@@ -449,6 +533,9 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 	#content-gallery a img {
 		width: 100%;
 	}
+	
+
+
 }
 
 @media screen and (min-width: 569px) {
@@ -586,6 +673,34 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 	#footer {
 		padding: 30px 0;
 	}
+	
+	.home-spacer{
+		margin: 250px;
+	}
+
+	.home-title {
+	font-size: 275%;
+	color: #154baf;
+	font-family: gothamBold;
+	font-weight: bold;
+	
+	}
+
+	.home-sub-title {
+		font-size: 175%;
+		color: #ffffff;
+		font-family: gothamBook;
+		font-weight: bold;
+		line-height: 2.25;
+		
+	}
+	
+	.home-copy {
+		color: #363636;
+		font-family: gothamBook;
+		width: 50%;
+	}
+
 }
 
 @media screen and (min-width: 569px) and (max-width: 999px) {
@@ -600,6 +715,14 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 		width: 90%;
 		margin: 0 auto;
 		display: block;
+	}
+
+	#header-wrapper2 #header-nav .phone {
+		display: inline-block;
+		margin-left: 30px;
+		font-weight: bold;
+		color: #FFFFFF;
+		font-size: 115%;
 	}
 	
 	#page-nav-wrapper header {
@@ -687,11 +810,19 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 		margin: 0 auto;
 	}
 	
+	.arrow-left {
+		float:left;
+	}
+	
+	.arrow-right {
+		float:right;
+	}
+	
 	#content {
 		width: 67.7%;
 		moz-box-sizing: border-box;
 		box-sizing: border-box;
-		float: right;
+		/*float: right;*/
 		height: 567px;
 		padding-left: 3px;
 		position: relative;
@@ -718,6 +849,36 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 		width: 24%;
 	}
 	
+	.home-title {
+	font-size: 275%;
+	color: #154baf;
+	font-family: gothamBold;
+	font-weight: bold;
+	
+	}
+
+	.home-sub-title {
+		font-size: 175%;
+		color: #ffffff;
+		font-family: gothamBook;
+		font-weight: bold;
+		line-height: 1.25;
+		margin-bottom: 15px;
+		margin-top: 15px;
+		
+	}
+
+	.home-copy {
+		color: #363636;
+		font-family: gothamBook;
+		width: 85%;
+	}
+
+	.home-spacer{
+		margin: 200px;
+	}
+
+	
 }
 @media screen and (min-width: 569px) and (max-width: 700px) {
 	#sub-nav li {
@@ -743,7 +904,7 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 	
 	#content-copy {
 		font-size: 90%;
-		height: 300px;
+		height: 100%;
 	}
 	
 	#content-gallery  {
@@ -754,9 +915,38 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 		width: 30%;
 		margin: 0 10px;
 	}
+	
+	.home-title {
+	font-size: 275%;
+	color: #154baf;
+	font-family: gothamBold;
+	font-weight: bold;
+	
+	}
+	
+	.home-sub-title {
+		font-size: 175%;
+		color: #ffffff;
+		font-family: gothamBook;
+		font-weight: bold;
+		line-height: 2.25;
+		
+	}
+	
+	.home-copy {
+		color: #363636;
+		font-family: gothamBook;
+		width: 85%;
+	}
+	
+	.home-spacer{
+		margin: 200px;
+	}
+
 }
 
 @media screen and (min-width: 1000px) {
+
 
 	#header-wrapper header {
 		width: 1000px;
@@ -770,6 +960,14 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 		margin: 0 auto;
 		height: 68px;
 		display: block;
+	}
+	
+	#header-wrapper2 #header-nav .phone {
+		display: inline-block;
+		margin-left: 30px;
+		font-weight: bold;
+		color: #FFFFFF;
+		font-size: 115%;
 	}
 	
 	#page-nav-wrapper header {
@@ -791,9 +989,9 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 	#header-wrapper2 #logo a:link, #header-wrapper2 #logo a:visited {
 		float: left;
 		display: block;
-		height: 68px;
-		line-height: 68px;
-		font-size: 170%;
+		height: 63px;
+		line-height: 63px;
+		font-size: 155%;
 		color: #ffffff;
 	}
 	
@@ -860,9 +1058,19 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 	#container {
 		/* width: 1000px; */
 		margin: 0 auto;
-		height: 100%;
+		padding-bottom;
 
 
+	}	.arrow-left {
+		float:left;
+		margin: 150px 0px 0px 25px;
+		
+	}
+	
+	.arrow-right {
+		float:right;
+		margin: 150px 25px 0px 0px;
+		background-image: images/arrow-left.png;
 	}
 	
 	#sub-nav {
@@ -952,6 +1160,7 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 		margin: 0 auto;
 		font-size: 83.33333333333333%;
 		width:100%;
+		height: 80;
 
 	}
 	
@@ -966,6 +1175,33 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 	#footer-links li {
 		height: 10px;
 		line-height: 10px;
+	}
+	
+	.home-title {
+	font-size: 275%;
+	color: #154baf;
+	font-family: gothamBold;
+	font-weight: bold;
+	
+	}
+	
+	.home-sub-title {
+		font-size: 175%;
+		color: #ffffff;
+		font-family: gothamBook;
+		font-weight: bold;
+		line-height: 2.25;
+		
+	}
+	
+	.home-copy {
+		color: #363636;
+		font-family: gothamBook;
+		width: 50%;
+	}
+	
+	.home-spacer{
+		margin: 250px;
 	}
 
 }
