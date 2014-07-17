@@ -14,7 +14,7 @@
 							  if($post->post_parent) {
 								$children = wp_list_pages("title_li=&child_of=".$post->post_parent."&echo=0");
 								$var1 = '<a';
-								$var2 = '<span id="page-nav-item"><a';
+								$var2 = '<span class="page-nav-item"><a';
 								$var3 = '</a>';
 								$var4 = '</a></span>';
 								$children = str_replace($var1, $var2, $children);
@@ -22,14 +22,14 @@
 							  } else {
 								$children = wp_list_pages("title_li=&child_of=".$post->ID."&echo=0");
 								$var1 = '<a';
-								$var2 = '<span id="page-nav-item"><a';
+								$var2 = '<span class="page-nav-item"><a';
 								$var3 = '</a>';
 								$var4 = '</a></span>';
 								$children = str_replace($var1, $var2, $children);
 								$children = str_replace($var3, $var4, $children);
 							  }
 							  if ($children) { ?>
-						  <ul>
+						  <ul id="page-nav-wrapper-wrapper">
 						  <?php echo $children; ?>
 						  </ul>
 						<?php }} ?>
