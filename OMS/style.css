@@ -1024,7 +1024,7 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 	}
 	
 	#page-nav-wrapper header nav {
-		float: left;
+		/* float: left; */
 	}
 	
 	#header-wrapper header nav li {
@@ -1062,9 +1062,9 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 	.page-nav-item a:active,
 	.page-nav-item a.current,
 	.page-nav-item a:visited,
+	.page-nav-item a,
 	.page-nav-item{
 		color: #b3b3b3;
-		font-size: 115%;
 	}
 
 	#container {
