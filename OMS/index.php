@@ -8,7 +8,7 @@
 			<div id="page-nav-wrapper" class="cf">
 				<header>
 					<nav id="page-nav">
-						<span id="page-title"><?php wp_title(); ?></span>
+						<span id="page-title"><?php wp_title("", true); ?></span>
 						<?php
 						  if (!is_home()) {
 							  if($post->post_parent) {
