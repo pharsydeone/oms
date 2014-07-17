@@ -152,25 +152,26 @@ img.bkg { max-width: 100%; }
 
 @font-face {
     font-family: gothamMedium;
-    src: url(gotham-medium.ttf);
+    src: url(/oms2/fonts/gotham-medium.ttf);
 }
 
 @font-face {
     font-family: gothamBold;
-    src: url(gotham-bold.ttf);
+    src: url(/oms2/fonts/gotham-bold.ttf);
 }
 
 @font-face {
     font-family: gothamBook;
-    src: url(gotham-book.ttf);
+    src: url(/oms2/fonts/gotham-book.ttf);
 }
 
 #page-title {
-
 	font-size: 250%;
 	font-weight:bold;
 	padding-right: 50px;
 	color: #3ab2c3;
+	font-family: gothamMedium;
+	text-transform:capitalize;
 }
 
 #page-title a:hover,
@@ -288,6 +289,14 @@ a.more:active {
     background: #cccccc;
 }
 
+.mobile-title {
+	font-size: 250%;
+	font-weight:bold;
+	color: #3ab2c3;
+	display:none;
+	font-family: gothamMedium;
+}
+
 /* Smartphones (portrait) ----------- */
 @media only screen 
 and (max-width : 568px),
@@ -337,7 +346,7 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 
 	#page-nav-wrapper header {
 		width: 100%;
-		height: 68px;
+		height: 45px;
 		display: block;
 	}
 	
@@ -354,16 +363,14 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 		color: #ffffff;
 		font-family: gothamBook;
 		font-weight: bold;
-		line-height: 1.25;
-		margin-top: 10px;
-		margin-bottom: 10px;
+		line-height: 1.75;
 		
 	}
 	
 	.home-copy {
 		color: #363636;
 		font-family: gothamBook;
-		width: 100%;
+		width: 300px;
 	}
 	
 	header a.mobile {
@@ -371,11 +378,11 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 		width: 22px;
 		height: 26px;
 		padding: 5px 0;
-		margin: 0 16px 0 5px;
+		margin: 0 16px 0 5px;;
 	}
 	
 	.home-spacer{
-		margin: 25px;
+		margin: 50px;
 	}
 	
 	#logo {
@@ -522,7 +529,10 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 		width: 100%;
 	}
 	
-
+	.mobile-title {
+		display:block;
+		font-size:200%;
+	}
 
 }
 
@@ -679,14 +689,14 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 		color: #ffffff;
 		font-family: gothamBook;
 		font-weight: bold;
-		line-height: 2.25;
+		line-height: 1.75;
 		
 	}
 	
 	.home-copy {
 		color: #363636;
 		font-family: gothamBook;
-		width: 50%;
+		width: 500px;
 	}
 
 }
@@ -711,10 +721,11 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 		font-weight: bold;
 		color: #FFFFFF;
 		font-size: 115%;
+		margin-right: 12px;
 	}
 	
 	#page-nav-wrapper header {
-		width: 90%;
+		width: 100%;
 		margin: 0 auto;
 		display: block;
 	}
@@ -724,7 +735,8 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 	}
 	
 	#header-wrapper2 header h1 {
-		margin: 30px 0 20px 0;
+		margin: 20px 0 20px 35px;
+		padding-left:10px;
 	}
 	
 	#page-nav-wrapper header h1 {
@@ -747,6 +759,7 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 	
 	#header-nav {
 		margin-bottom: 5px;
+		float:right;
 	}
 
 	#page-nav {
@@ -758,9 +771,11 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 		padding: 12px;
 	}
 	
-	#page-nav li {
+	#page-nav-wrapper header nav li {
 		display: inline;
-		padding: 12px;
+		line-height: 68px;
+		height: 68px;
+		margin-right: 40px;
 	}
 	
 	#header-nav li a{
@@ -807,11 +822,13 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 	}
 	
 	#content {
-		width: 67.7%;
+		margin-left: auto;
+		margin-right: auto;
+		width: 85%;
 		moz-box-sizing: border-box;
 		box-sizing: border-box;
 		/*float: right;*/
-		height: 567px;
+		/*height: 567px;*/
 		padding-left: 3px;
 		position: relative;
 		overflow: hidden;
@@ -850,20 +867,18 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 		color: #ffffff;
 		font-family: gothamBook;
 		font-weight: bold;
-		line-height: 1.25;
-		margin-bottom: 15px;
-		margin-top: 15px;
+		line-height: 1.75;
 		
 	}
 
 	.home-copy {
 		color: #363636;
 		font-family: gothamBook;
-		width: 85%;
+		width: 500px;
 	}
 
 	.home-spacer{
-		margin: 200px;
+		margin: 250px;
 	}
 
 	
@@ -892,7 +907,6 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 	
 	#content-copy {
 		font-size: 90%;
-		height: 100%;
 	}
 	
 	#content-gallery  {
@@ -917,18 +931,18 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 		color: #ffffff;
 		font-family: gothamBook;
 		font-weight: bold;
-		line-height: 2.25;
+		line-height: 1.75;
 		
 	}
 	
 	.home-copy {
 		color: #363636;
 		font-family: gothamBook;
-		width: 85%;
+		width: 500px;
 	}
 	
 	.home-spacer{
-		margin: 200px;
+		margin: 250px;
 	}
 
 }
@@ -977,9 +991,9 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 	#header-wrapper2 #logo a:link, #header-wrapper2 #logo a:visited {
 		float: left;
 		display: block;
-		height: 63px;
-		line-height: 63px;
-		font-size: 155%;
+		height: 68px;
+		line-height: 68px;
+		font-size: 170%;
 		color: #ffffff;
 	}
 	
@@ -1178,14 +1192,14 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 		color: #ffffff;
 		font-family: gothamBook;
 		font-weight: bold;
-		line-height: 2.25;
+		line-height: 1.75;
 		
 	}
 	
 	.home-copy {
 		color: #363636;
 		font-family: gothamBook;
-		width: 50%;
+		width: 500px;
 	}
 	
 	.home-spacer{
