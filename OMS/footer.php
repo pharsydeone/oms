@@ -16,9 +16,13 @@
 
 <script type="text/javascript" language="javascript">
 $(window).resize(function(){
-   var height = $(this).height() - ($("#header-wrapper").height() + $("#footer").height() + $("#header-wrapper2").height() + 60)
+   var height = $(this).height() - ($("#header-wrapper").height() + $("#footer").height() + $("#header-wrapper2").height() + 60);
+   
    if($('#container').height() < height) {
 		$('#container').height(height);
+		
+		var topmargin = ((height - $('#content-copy').height()) / 2);
+		$('#content-copy').css('margin-top',topmargin+'px');
    }
 })
 
