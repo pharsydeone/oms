@@ -7,11 +7,23 @@
     </div>
 </div>
 
-<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.js"></script>
+<!-- <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.js"></script> -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.sidr.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/modernizr.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/respond.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/thpg.js"></script>
+
+<script type="text/javascript" language="javascript">
+$(window).resize(function(){
+   var height = $(this).height() - ($("#header-wrapper").height() + $("#footer").height() + $("#header-wrapper2").height() + 60)
+   if($('#container').height() < height) {
+		$('#container').height(height);
+   }
+})
+
+$(window).resize(); //on page load
+</script>
 
 </body>
 </html>
