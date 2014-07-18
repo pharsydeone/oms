@@ -5,8 +5,26 @@
 <title><?php echo get_bloginfo('name'); ?> - <?php wp_title(); ?></title>
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
 <meta name="viewport" content="initial-scale=1.0,width=device-width" />
+<script type="text/javascript" src="http://thpgtemplate1.herokuapp.com/wp-content/themes/thpg/js/jquery.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/jquery.sidr.dark.css" />
+<script type="text/javascript">
+	var $ = jQuery;
+	$(function() {
+		$(document).click(function(e) {
+			if($(e.target).is('.appointment .link'))
+			{
+				$('.appointment').toggleClass('active');
+				return false;
+			}
+			else if(!$(e.target).parents('.appointment').length)
+			{
+				$('.appointment').removeClass('active');
+			}
+		});
+	});
+</script>
+
 </head>
 
 <body>
