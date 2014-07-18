@@ -46,6 +46,8 @@ function ruab_prev_page_link() {
 		if( '' != $prev_page_id ) 
 		{
 			$output .= '<a href="' . get_page_link($prev_page_id) . '"><img src="'. get_template_directory_uri() .'/images/arrow-left.png" /></a>';
+		} else { 
+			$output .= '<a href="' . get_page_link(end($child_id_array)) . '"><img src="'. get_template_directory_uri() .'/images/arrow-left.png" /></a>';
 		}
 	};
 	return $output;
@@ -67,6 +69,8 @@ function ruab_next_page_link() {
 
 		if( '' != $next_page_id ) {
 			$output .= '<a href="' . get_page_link($next_page_id) . '"><img src="'. get_template_directory_uri() .'/images/arrow-right.png" /></a>';
+		} else { 
+			$output .= '<a href="' . get_page_link($child_id_array[0]) . '"><img src="'. get_template_directory_uri() .'/images/arrow-right.png" /></a>';
 		}
 	};
 	return $output;
