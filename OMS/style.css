@@ -310,6 +310,21 @@ a.more:active {
 	display:none;
 	font-family: gothamMedium;
 }
+
+#content {
+	position: relative;
+}
+
+
+#formDrop {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	width: 125px;
+	padding: 0 10px;
+	background: #3ab2c3;
+}
 /* Smartphones (portrait) ----------- */
 @media only screen 
 and (max-width : 568px),
@@ -655,9 +670,9 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 	}
 	
 	#content-copy {
-		width: 100%;
+	/*	width: 100%;
 		height: 68%;
-	/*	background: #fff;
+		background: #fff;
 		background: rgba(255,255,255,0.85); */
 		line-height: 1.8em;
 		overflow-y: auto;
@@ -723,7 +738,7 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 
 }
 
-@media screen and (min-width: 569px) and (max-width: 999px) {
+@media screen and (min-width: 569px) and (max-width: 1099px) {
 	
 	#header-wrapper header {
 		width: 90%;
@@ -833,13 +848,10 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 		margin: 0 auto;
 	}
 	
-	.arrow-left {
-		float:left;
+	.arrow-left, .arrow-right {
+		position:absolute;
 	}
 	
-	.arrow-right {
-		float:right;
-	}
 	
 	#content {
 		margin-left: auto;
@@ -998,18 +1010,18 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
 
 
 	#header-wrapper header {
-		width: 1000px;
+		width: 75%;
 		margin: 0 auto;
 		height: 25px;
 		display: block;
 	}
 	
 	#header-wrapper2 header {
-		width: 1000px;
+		width: 75%;
 		margin: 0 auto;
 		height: 68px;
 		display: block;
@@ -1024,7 +1036,7 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 	}
 	
 	#page-nav-wrapper header {
-		width: 1000px;
+		width: 75%;
 		margin: 0 auto;
 		height: 68px;
 		display: block;
@@ -1119,18 +1131,23 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 		/* width: 1000px; */
 		margin: 0 auto;
 		padding-bottom;
+	}
+	
+	.arrow-left, .arrow-right {
+		position: absolute;
+		top: 50%;
+		margin-top: -17px;
+	}
+	
 
-
-	}	.arrow-left {
-		float:left;
-		margin: 150px 0px 0px 25px;
-		
+	.arrow-left {
+		left: 25px;
+		background-image: images/arrow-left.png;
 	}
 	
 	.arrow-right {
-		float:right;
-		margin: 150px 25px 0px 0px;
-		background-image: images/arrow-left.png;
+		right: 25px;
+		background-image: images/arrow-right.png;
 	}
 	
 	#sub-nav {
@@ -1169,7 +1186,6 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 	}
 	
 	#content {
-		width: 1000px;
 		moz-box-sizing: border-box;
 		box-sizing: border-box;
 		margin-left:auto;
@@ -1186,11 +1202,19 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 
 	}
 	
+	#content-copy-wrapper {
+		width: 75%;
+		margin:0 auto;
+		position: relative;
+		overflow:hidden;
+
+	}
+
 	#content-copy {
+
 		padding-top: 30px;
 		moz-box-sizing: border-box;
 		box-sizing: border-box;
-	/*	height: 391px; */
 	}
 	
 	#content-copy p {
