@@ -177,14 +177,16 @@ img.bkg { max-width: 100%; }
     src: url('fonts/gotham-book.ttf');
 }
 
-#page-title {
-	font-size: 250%;
-	font-weight:bold;
-	padding-right: 50px;
-	color: #3ab2c3;
-	margin:0px;
-	float:left;
-}
+
+
+	.page-nav-item a:hover,
+	.page-nav-item a:active,
+	.page-nav-item a.current,
+	.page-nav-item a:visited,
+	.page-nav-item a,
+	.page-nav-item{
+		color: #b3b3b3;
+	}
 
 #page-title a:hover,
 #page-title a:active,
@@ -301,6 +303,13 @@ a.more:active {
     background: #cccccc;
 }
 
+.mobile-title {
+	font-size: 250%;
+	font-weight:bold;
+	color: #3ab2c3;
+	display:none;
+	font-family: gothamMedium;
+}
 /* Smartphones (portrait) ----------- */
 @media only screen 
 and (max-width : 568px),
@@ -350,7 +359,7 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 
 	#page-nav-wrapper header {
 		width: 100%;
-		height: 30px;
+		/*height: 30px;*/
 		display: block;
 	}
 	#page-nav-wrapper-wrapper {
@@ -458,7 +467,7 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 	
 	#content {
 		padding: 15px 12px 10px 12px;
-		font-size: 112.5%;
+
 		line-height: 1.2em;
 		background-color: transparent;
 	}
@@ -513,12 +522,14 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 	}
 	
 	#content-copy {
-		font-size: 90%;
+		font-size: 95%;
 		line-height: 1.6em;
 	}
 	
 	#content-copy p {
-		margin-bottom: 15px;
+		margin-bottom: 20px;
+		line-height: 1.5em;
+		font-family: gothamBook;
 	}
 	
 	#featured-image+#content-copy {
@@ -539,7 +550,11 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 		width: 100%;
 	}
 	
-
+	.mobile-title {
+		display:block;
+		font-size:200%;
+		padding-bottom: 30px;
+	}
 
 }
 
@@ -728,10 +743,11 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 		font-weight: bold;
 		color: #FFFFFF;
 		font-size: 115%;
+		margin-right: 12px;
 	}
 	
 	#page-nav-wrapper header {
-		width: 90%;
+		width: 100%;
 		margin: 0 auto;
 		display: block;
 	}
@@ -741,7 +757,8 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 	}
 	
 	#header-wrapper2 header h1 {
-		margin: 30px 0 20px 0;
+		margin: 20px 0 20px 35px;
+		padding-left:10px;
 	}
 	
 	#page-nav-wrapper header h1 {
@@ -764,6 +781,7 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 	
 	#header-nav {
 		margin-bottom: 5px;
+		float:right;
 	}
 
 	#page-nav {
@@ -775,18 +793,18 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 		padding: 12px;
 	}
 	
-	#page-nav li {
+	#page-nav-wrapper header nav li {
 		display: inline;
-		padding: 12px;
+		line-height: 30px;
+		height: 68px;
+		margin-right: 40px;
 	}
 	
 	#header-nav li a{
 		color: #ffffff;
 	}
 	
-	#page-nav li a{
-		color: #ffffff;
-	}
+
 	
 	#sub-nav {
 		text-align: right;
@@ -824,11 +842,13 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 	}
 	
 	#content {
-		width: 67.7%;
+		margin-left: auto;
+		margin-right: auto;		
+		width: 85%;
 		moz-box-sizing: border-box;
 		box-sizing: border-box;
 		/*float: right;*/
-		height: 567px;
+		/*height: 567px;*/
 		padding-left: 3px;
 		position: relative;
 		overflow: hidden;
@@ -848,6 +868,12 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 		padding: 20px;
 		text-align: left;
 		font-size: 95%;
+	}
+	
+	#content-copy p {
+		margin-bottom: 20px;
+		line-height: 1.5em;
+		font-family: gothamBook;
 	}
 	
 	#content-gallery a {
@@ -882,6 +908,17 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 	.home-spacer{
 		margin: 200px;
 	}
+	
+	#page-title {
+	font-size: 300%;
+	font-weight:bold;
+	padding-right: 50px;
+	color: #3ab2c3;
+	margin:0px;
+	float:left;
+	font-family: gothamMedium;
+	text-transform:capitalize;
+	}
 
 	
 }
@@ -908,7 +945,7 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 	}
 	
 	#content-copy {
-		font-size: 90%;
+		font-size: 95%;
 		height: 100%;
 	}
 	
@@ -946,6 +983,17 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 	
 	.home-spacer{
 		margin: 200px;
+	}
+	
+	#page-title {
+	font-size: 350%;
+	font-weight:bold;
+	padding-right: 50px;
+	color: #3ab2c3;
+	margin:0px;
+	float:left;
+	font-family: gothamMedium;
+	text-transform:capitalize;
 	}
 
 }
@@ -1149,6 +1197,7 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 		font-size: 115%;
 		margin-bottom: 20px;
 		line-height: 1.5em;
+		font-family: gothamBook;
 	}
 	
 	#content-copy h1 {
@@ -1213,7 +1262,18 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 	}
 	
 	.home-spacer{
-		margin: 250px;
+		margin-top: 250px;
 	}
+	
+	#page-title {
+	font-size: 350%;
+	font-weight:bold;
+	padding-right: 50px;
+	color: #3ab2c3;
+	margin:0px;
+	float:left;
+	font-family: gothamMedium;
+	text-transform:capitalize;
+}
 
 }

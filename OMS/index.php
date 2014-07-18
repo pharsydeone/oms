@@ -7,6 +7,7 @@
 		<div id="content-copy">
 			<div id="page-nav-wrapper" class="cf">
 				<header>
+                	<div class="mobile-title"><?php wp_title("", true); ?></div>
 					<nav id="page-nav">
 						<span id="page-title"><?php wp_title("", true); ?></span>
 						<?php
