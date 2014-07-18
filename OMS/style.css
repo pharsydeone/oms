@@ -295,14 +295,6 @@ a.more:active {
 	background-size: cover;
 }
 
-#header-wrapper2 #header-nav .appointment {
-	position:absolute;
-	float:right;
-    width: 150px;
-    top: 30px;
-    background: #cccccc;
-}
-
 .mobile-title {
 	font-size: 250%;
 	font-weight:bold;
@@ -316,15 +308,47 @@ a.more:active {
 }
 
 
-#formDrop {
+.appointment {
 	position: absolute;
 	top: 0;
 	right: 0;
 	display: block;
-	width: 125px;
-	padding: 0 10px;
+	width: 210px;
 	background: #3ab2c3;
+	border: 
 }
+
+
+.appointment a.link {
+    display: block;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 5px 12px;
+    text-align: center;
+}
+
+.appointment .formDrop {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 22px;
+    background: #0174cf;
+}
+
+.appointment form {
+    padding: 1px;
+}
+
+.appointment.active .formDrop {
+    display: block;
+}
+
+.appointment.active a.link {
+    background: #3ab2c3;
+    color: #FFF;
+}
+
+
 /* Smartphones (portrait) ----------- */
 @media only screen 
 and (max-width : 568px),
@@ -539,6 +563,7 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 	#content-copy {
 		font-size: 95%;
 		line-height: 1.6em;
+		margin:0 auto;
 	}
 	
 	#content-copy p {
@@ -958,7 +983,7 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 	
 	#content-copy {
 		font-size: 95%;
-		height: 100%;
+		/*height: 100%;*/
 	}
 	
 	#content-gallery  {

@@ -5,7 +5,12 @@
     <div class="arrow-left"><?php echo ruab_prev_page_link(); ?></div>
 	<div class="arrow-right"><?php echo ruab_next_page_link(); ?></div>
 		<div id="content-copy-wrapper">
-        <a href="#" id="formDrop">Snoo</a>
+        <div class="appointment">
+                    <a href="" class="link">Request an Appointment</a>
+                    <div class="formDrop">
+                        <script type="text/javascript" src="https://www.formstack.com/forms/js.php?1775342-pDLbSvuQMj-v3"></script><noscript><a href="https://www.formstack.com/forms/?1775342-pDLbSvuQMj" title="Online Form">Online Form - THPG - Orthopedic Medicine Specialist Appointment Request</a></noscript>
+                    </div>
+                </div>
             <div id="content-copy">                
                 <div id="page-nav-wrapper" class="cf">
                     <header>
