@@ -1132,7 +1132,6 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 		padding-top: 30px;
 		moz-box-sizing: border-box;
 		box-sizing: border-box;
-	/*	height: 391px; */
 	}
 	
 	#content-copy p {
