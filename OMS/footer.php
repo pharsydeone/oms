@@ -14,19 +14,22 @@
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/respond.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/thpg.js"></script>
 
-<script type="text/javascript" language="javascript">
+<script type="text/javascript" language="javascript">	
 $(window).resize(function(){
-   var height = $(this).height() - ($("#header-wrapper").height() + $("#footer").height() + $("#header-wrapper2").height() + 60);
-   
-   if($('#container').height() < height) {
+   var height = $(this).outerHeight() - ($("#header-wrapper").outerHeight() + $("#footer").outerHeight() + $("#header-wrapper2").outerHeight());
+
+    if($('#content-copy').height() < height) {
 		$('#container').height(height);
-		
+
 		var topmargin = ((height - $('#content-copy').height()) / 2);
 		$('#content-copy').css('margin-top',topmargin+'px');
-   }
+   } else {
+		$('#content-copy').css('margin-top','0px');
+   } 
 })
 
 $(window).resize(); //on page load
+
 </script>
 
 </body>
