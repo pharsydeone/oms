@@ -29,6 +29,7 @@ $(window).resize(function(){
 })
 
 $(window).resize(); //on page load
+
 </script>
 
 </body>
