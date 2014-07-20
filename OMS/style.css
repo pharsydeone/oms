@@ -305,6 +305,13 @@ a.more:active {
 
 #content {
 	position: relative;
+	height: 100%;
+}
+#content-copy-wrapper {
+	margin:0 auto;
+	position: relative;
+	overflow:hidden;
+	height: 100%;
 }
 
 
@@ -348,6 +355,26 @@ a.more:active {
     color: #FFF;
 }
 
+.arrow-left, .arrow-right {
+	position: absolute;
+	top: 50%;
+	margin-top: -17px;
+}
+	
+.arrow-left {
+	left: 25px;
+	background-image: images/arrow-left.png;
+}
+	
+.arrow-right {
+	right: 25px;
+	background-image: images/arrow-right.png;
+}
+
+.mobile-phone {
+	display: none;
+}
+
 
 /* Smartphones (portrait) ----------- */
 @media only screen 
@@ -357,7 +384,6 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 	#page-wrapper {
 		background: #fff;
 	}
-
 
 	#header-wrapper {
 		background: #454545;
@@ -380,7 +406,7 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 	#header-wrapper2 header {
 		width: 100%;
 		background-color: #3ab2c3;
-		height: 68px;
+		height: 50px;
 		display: block;
 	}
 	
@@ -412,7 +438,7 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 	font-family: gothamBold;
 	font-weight: bold;
 	
-}
+	}
 
 	.home-sub-title {
 		font-size: 100%;
@@ -504,11 +530,46 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 		border: none;
 	}
 	
-	#content {
+	#content-copy {
 		padding: 15px 12px 10px 12px;
-
 		line-height: 1.2em;
 		background-color: transparent;
+		font-size: 95%;
+		line-height: 1.6em;
+		margin:0 auto;
+	}
+	
+	.arrow-left, .arrow-right {
+		display: none;
+	}
+	
+	.fsBody .fsForm {
+		padding-top: 10px !important;
+	}
+	
+	.appointment {
+		position: relative;
+		width: 100%;
+		text-align: left;
+	}
+	
+	.appointment a.link {
+		width: auto;
+		display: inline-block;
+		margin: 0 10px 0 35px;
+	}
+	
+	.appointment .formDrop {
+		position: relative;
+		top: 0;
+	}
+	
+	.mobile-phone {
+		display: inline-block;
+	}
+	
+	.fsBody .fsFieldRow input[type=email], .fsBody .fsFieldRow input[type=number], .fsBody .fsFieldRow input[type=tel] {
+		width: 95% !important;
 	}
 	
 	#content h1 {
@@ -536,7 +597,7 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 		margin: 0 auto;
 		font-size: 100%;
 		padding: 20px 0;
-		
+		background: transparent;
 	}
 	
 	#footer-logo {
@@ -561,9 +622,7 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 	}
 	
 	#content-copy {
-		font-size: 95%;
-		line-height: 1.6em;
-		margin:0 auto;
+
 	}
 	
 	#content-copy p {
@@ -873,15 +932,16 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 		margin: 0 auto;
 	}
 	
+	/*
 	.arrow-left, .arrow-right {
 		position:absolute;
 	}
-	
+	*/
 	
 	#content {
 		margin-left: auto;
 		margin-right: auto;		
-		width: 85%;
+		/*width: 85%;*/
 		moz-box-sizing: border-box;
 		box-sizing: border-box;
 		/*float: right;*/
@@ -893,10 +953,23 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 		background: transparent;
 	}
 	
+	.arrow-left {
+		left: 10px;
+	}
+	
+	.arrow-right {
+		right: 10px;
+	}
+	
 	#featured-image img{
 		position: relative;
 		left: 100%;
 		margin-left: -200%;
+	}
+	
+	#content-copy-wrapper {
+		width: 85%;
+		height: 100%;
 	}
 	
 	#content-copy {
@@ -1158,22 +1231,7 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 		padding-bottom;
 	}
 	
-	.arrow-left, .arrow-right {
-		position: absolute;
-		top: 50%;
-		margin-top: -17px;
-	}
 	
-
-	.arrow-left {
-		left: 25px;
-		background-image: images/arrow-left.png;
-	}
-	
-	.arrow-right {
-		right: 25px;
-		background-image: images/arrow-right.png;
-	}
 	
 	#sub-nav {
 		width: 100%;
@@ -1229,14 +1287,9 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 	
 	#content-copy-wrapper {
 		width: 75%;
-		margin:0 auto;
-		position: relative;
-		overflow:hidden;
-
 	}
 
 	#content-copy {
-
 		padding-top: 30px;
 		moz-box-sizing: border-box;
 		box-sizing: border-box;
