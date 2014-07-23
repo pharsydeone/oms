@@ -5,7 +5,7 @@
 <title><?php echo get_bloginfo('name'); ?> - <?php wp_title(); ?></title>
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
 <meta name="viewport" content="initial-scale=1.0,width=device-width" />
-<script type="text/javascript" src="http://thpgtemplate1.herokuapp.com/wp-content/themes/thpg/js/jquery.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/jquery.sidr.dark.css" />
 <script type="text/javascript">

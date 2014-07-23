@@ -122,7 +122,7 @@
     margin:0
 }
 .sidr ul li ul li{
-    line-height:40px;
+    line-height:25px;
     font-size:13px
 }
 .sidr ul li ul li:last-child{
@@ -131,7 +131,7 @@
 .sidr ul li ul li:hover,
 .sidr ul li ul li.active,.sidr ul li ul li.sidr-class-active{
     border-top:none;
-    line-height:41px
+    /*line-height:41px*/
 }
 .sidr ul li ul li:hover>a,
 .sidr ul li ul li:hover>span,

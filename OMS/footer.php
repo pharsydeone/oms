@@ -14,6 +14,7 @@
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/respond.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/thpg.js"></script>
 
+
 <script type="text/javascript" language="javascript">	
  //on page load
 
