@@ -177,31 +177,12 @@ img.bkg { max-width: 100%; }
     src: url('fonts/gotham-book.ttf');
 }
 
-
-
-	.page-nav-item a:hover,
-	.page-nav-item a:active,
-	.page-nav-item a.current,
-	.page-nav-item a:visited,
-	.page-nav-item a,
-	.page-nav-item{
-		color: #b3b3b3;
-	}
-
 #page-title a:hover,
 #page-title a:active,
 #page-title a.current,
 #page-title a:visited,
 #page-title .nav-row.current_page_item a {
 	color: #3ab2c3;
-}
-
-#page-nav-item a:hover,
-#page-nav-item a:active,
-#page-nav-item a.current,
-#page-nav-item a:visited,
-#page-nav-item .nav-row.current_page_item a {
-	color: #b3b3b3;
 }
 
 #featured-image+#content-copy {
@@ -275,14 +256,15 @@ a.more:active {
 
 #sub-nav .current-menu-item a,
 #header-nav .current-menu-item a,
-#page-nav .current-menu-item a {
+#page-nav .current_page_item a
+{
 	font-weight: bold;
 	cursor: default;
 }
 
 #sub-nav .current-menu-item a:hover,
 #header-nav .current-menu-item a:hover,
-#page-nav .current-menu-item a:hover {
+#page-nav .current_page_item a:hover {
 	text-decoration: none;
 }
 
@@ -430,7 +412,16 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 	#page-nav-wrapper-wrapper {
 		margin:0px;
 		float:left;
+		color: #b3b3b3;
 	}	
+	
+	#page-nav a:hover,
+	#page-nav a:active,
+	#page-nav a.current,
+	#page-nav a:visited,
+	#page-nav .nav-row.current_page_item a {
+		color: #b3b3b3;
+	}		
 	
 	.home-title {
 	font-size: 200%;
@@ -864,6 +855,14 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 		margin: 30px 0 20px 0;
 	}
 	
+	#page-nav a:hover,
+	#page-nav a:active,
+	#page-nav a.current,
+	#page-nav a:visited,
+	#page-nav .nav-row.current_page_item a {
+		color: #b3b3b3;
+	}	
+	
 	#logo a:link, #logo a:visited {
 		display: block;
 		font-size: 150%;
@@ -1144,6 +1143,15 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 	#page-nav-wrapper-wrapper {
 		margin: 0;
 		float:left;
+		color: #b3b3b3;
+	}	
+	
+	#page-nav a:hover,
+	#page-nav a:active,
+	#page-nav a.current,
+	#page-nav a:visited,
+	#page-nav .nav-row.current_page_item a {
+		color: #b3b3b3;
 	}	
 	
 	#header-wrapper #logo a:link, #header-wrapper #logo a:visited {
@@ -1215,23 +1223,12 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 		color: #eaeaea;
 		font-size: 115%;
 	}
-	
-	.page-nav-item a:hover,
-	.page-nav-item a:active,
-	.page-nav-item a.current,
-	.page-nav-item a:visited,
-	.page-nav-item a,
-	.page-nav-item{
-		color: #b3b3b3;
-	}
 
 	#container {
 		/* width: 1000px; */
 		margin: 0 auto;
 		padding-bottom;
 	}
-	
-	
 	
 	#sub-nav {
 		width: 100%;
