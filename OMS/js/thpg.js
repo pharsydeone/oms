@@ -13,8 +13,8 @@ $(window).resize(function(){
 	   if($('#content-copy').height() < height) {
 			$('#container').height(height);
 	
-			var topmargin = ((height - $('#content-copy').height()) / 2);
-			$('#content-copy').css('margin-top',topmargin+'px');
+			//var topmargin = ((height - $('#content-copy').height()) / 2);
+			//$('#content-copy').css('margin-top',topmargin+'px');
 	   } else {
 			$('#content-copy').css('margin-top','0px');
 	   } 

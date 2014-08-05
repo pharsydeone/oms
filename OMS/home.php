@@ -8,6 +8,8 @@ Template Name: Home Page
 
 <div id="container" class="cf" style="background-image:url(<?php the_field('background_image'); ?>); background-size:cover;">	
 		<div id="content">
+		<div class="arrow-left"><?php echo ruab_prev_page_link(); ?></div>
+		<div class="arrow-right"><?php echo ruab_next_page_link(); ?></div>
             <div id="content-copy-wrapper">
 				<div class="appointment">
                     <a href="" class="link">Request an Appointment</a>

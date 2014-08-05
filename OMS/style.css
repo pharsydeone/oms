@@ -415,6 +415,7 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 		color: #b3b3b3;
 	}	
 	
+	#page-nav a,
 	#page-nav a:hover,
 	#page-nav a:active,
 	#page-nav a.current,
@@ -855,6 +856,7 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 		margin: 30px 0 20px 0;
 	}
 	
+	#page-nav a,
 	#page-nav a:hover,
 	#page-nav a:active,
 	#page-nav a.current,
@@ -1146,6 +1148,7 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 		color: #b3b3b3;
 	}	
 	
+	#page-nav a,
 	#page-nav a:hover,
 	#page-nav a:active,
 	#page-nav a.current,
