@@ -8,10 +8,11 @@
 </div>
 
 <!-- <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.js"></script> -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.sidr.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/modernizr.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/respond.min.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.bxslider.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/thpg.js"></script>
 
 

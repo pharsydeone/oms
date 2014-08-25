@@ -2,12 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="format-detection" content="telephone=no">
 <title><?php echo get_bloginfo('name'); ?> - <?php wp_title(); ?></title>
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
 <meta name="viewport" content="initial-scale=1.0,width=device-width" />
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.js"></script>
-<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/jquery.sidr.dark.css" />
+<link href="<?php bloginfo('template_directory'); ?>/jquery.bxslider.css" rel="stylesheet" />
 <script type="text/javascript">
 	var $ = jQuery;
 	$(function() {
@@ -24,6 +25,18 @@
 		});
 	});
 </script>
+
+<!--[if lt IE 9]>
+<script>
+document.createElement('header');
+document.createElement('nav');
+document.createElement('section');
+document.createElement('article');
+document.createElement('aside');
+document.createElement('footer');
+document.createElement('hgroup');
+</script>
+<![endif]-->
 
 </head>
 

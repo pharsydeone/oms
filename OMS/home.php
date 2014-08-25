@@ -15,7 +15,7 @@ Template Name: Home Page
                     <a href="" class="link">Request an Appointment</a>
                     <div class="mobile-phone">888.867.5309</div>
                     <div class="formDrop">
-                        <script type="text/javascript" src="https://www.formstack.com/forms/js.php?1775342-pDLbSvuQMj-v3"></script><noscript><a href="https://www.formstack.com/forms/?1775342-pDLbSvuQMj" title="Online Form">Online Form - THPG - Orthopedic Medicine Specialist Appointment Request</a></noscript>
+<script type="text/javascript" src="https://www.formstack.com/forms/js.php?no_style=1&form=1775342&viewkey=pDLbSvuQMj&style_version=v3"></script><noscript><a href="https://www.formstack.com/forms/?1775342-pDLbSvuQMj" title="Online Form">Online Form - THPG - Orthopedic Medicine Specialist Appointment Request</a></noscript> 
                     </div>
                 </div>
                 <div id="content-copy">

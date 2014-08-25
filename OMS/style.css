@@ -164,17 +164,35 @@ img.bkg { max-width: 100%; }
 
 @font-face {
     font-family: gothamMedium;
-    src: url('fonts/gotham-medium.ttf');
+    src: url('fonts/gothammedium-webfont.eot');
+    src: url('fonts/gothammedium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gothammedium-webfont.woff') format('woff'),
+         url('fonts/gothammedium-webfont.ttf') format('truetype'),
+         url('fonts/gothammedium-webfont.svg#gotham_mediumregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
     font-family: gothamBold;
-    src: url('fonts/gotham-bold.ttf');
+    src: url('fonts/gothambold-webfont.eot');
+    src: url('fonts/gothambold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gothambold-webfont.woff') format('woff'),
+         url('fonts/gothambold-webfont.ttf') format('truetype'),
+         url('fonts/gothambold-webfont.svg#gotham_boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
     font-family: gothamBook;
-    src: url('fonts/gotham-book.ttf');
+    src: url('fonts/gothambook-webfont.eot');
+    src: url('fonts/gothambook-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gothambook-webfont.woff') format('woff'),
+         url('fonts/gothambook-webfont.ttf') format('truetype'),
+         url('fonts/gothambook-webfont.svg#gotham_bookregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 #page-title a:hover,
@@ -304,7 +322,6 @@ a.more:active {
 	display: block;
 	width: 210px;
 	background: #3ab2c3;
-	border: 
 }
 
 
@@ -345,12 +362,12 @@ a.more:active {
 	
 .arrow-left {
 	left: 25px;
-	background-image: images/arrow-left.png;
+	background-image: "images/arrow-left.png";
 }
 	
 .arrow-right {
 	right: 25px;
-	background-image: images/arrow-right.png;
+	background-image: "images/arrow-right.png";
 }
 
 .mobile-phone {
@@ -526,7 +543,7 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 		padding: 15px 12px 10px 12px;
 		line-height: 1.2em;
 		background-color: transparent;
-		font-size: 95%;
+		font-size: 100%;
 		line-height: 1.6em;
 		margin:0 auto;
 	}
@@ -644,7 +661,7 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 	.mobile-title {
 		display:block;
 		font-size:200%;
-		padding-bottom: 30px;
+		padding-bottom: 20px;
 	}
 
 }
@@ -810,6 +827,7 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 		color: #363636;
 		font-family: gothamBook;
 		width: 50%;
+		font-size: 110%;
 	}
 
 }
@@ -841,6 +859,7 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 		width: 100%;
 		margin: 0 auto;
 		display: block;
+		height: 55px;
 	}
 	
 	#header-wrapper header h1 {
@@ -976,12 +995,13 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 	#content-copy {
 		moz-box-sizing: border-box;
 		box-sizing: border-box;
-		padding-top: 70px;
+		padding-top: 80px;
 		text-align: left;
 		font-size: 95%;
 	}
 	
 	#content-copy p {
+		font-size: 120%;
 		margin-bottom: 20px;
 		line-height: 1.5em;
 		font-family: gothamBook;
@@ -1014,6 +1034,7 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 		color: #363636;
 		font-family: gothamBook;
 		width: 85%;
+		font-size: 110%;
 	}
 
 	.home-spacer{
@@ -1090,6 +1111,7 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 		color: #363636;
 		font-family: gothamBook;
 		width: 85%;
+		font-size: 110%;
 	}
 	
 	.home-spacer{
@@ -1230,7 +1252,6 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 	#container {
 		/* width: 1000px; */
 		margin: 0 auto;
-		padding-bottom;
 	}
 	
 	#sub-nav {
@@ -1290,13 +1311,13 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 	}
 
 	#content-copy {
-		padding-top: 70px;
+		padding-top: 80px;
 		moz-box-sizing: border-box;
 		box-sizing: border-box;
 	}
 	
 	#content-copy p {
-		font-size: 115%;
+		font-size: 130%;
 		margin-bottom: 20px;
 		line-height: 1.5em;
 		font-family: gothamBook;
@@ -1361,6 +1382,7 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 		color: #363636;
 		font-family: gothamBook;
 		width: 50%;
+		font-size: 110%;
 	}
 	
 	.home-spacer{
@@ -1379,3 +1401,4 @@ screen and (min-device-width: 320px) and (max-device-width: 568px) {
 }
 
 }
+
